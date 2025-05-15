@@ -1,0 +1,2383 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: initial;
+}
+
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/GilroySemiBold.ttf");
+    font-weight: 600px;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/GilroyMedium.ttf");
+    font-weight: 500px;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/GilroyRegular.ttf");
+    font-weight: 400px;
+}
+
+body {
+    min-width: 1400px;
+    background-color: rgb(247, 247, 247);
+    font-family: Gilroy;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*header*/
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 18px 0 19px;
+    font-size: 13px;
+}
+
+.header-btn {
+    width: 78px;
+    height: 31px;
+    border-radius: 34px;
+    background-color: #38BFF2;
+    color: #fff;
+}
+
+.header-btn:hover {
+    background-color: #F15525;
+}
+
+.header-btn:hover {
+    background-color: #F15525;
+}
+
+.header-list-contacts {
+    padding-right: 290px;
+}
+
+.header-container {
+    align-items: center;
+    margin-bottom: 0;
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 75px;
+    background-color: #fff;
+    height: 51px;
+}
+
+.header-logo {
+    margin-right: 73px;
+    margin-left: 21px;
+}
+
+.nav-list-item:not(:last-child) {
+    margin-right: 41px;
+}
+
+.nav-link {
+    text-decoration: none;
+    list-style: none;
+    color: #22253B;
+}
+
+.nav-link:hover {
+    color: #F15525;
+}
+
+
+/*hero*/
+
+.hero-title {
+    font-size: 46px;
+    margin-bottom: 31px;
+    line-height: 46px;
+    width: 638px;
+    font-family: Gilroy, "GilroyRegular";
+}
+
+.hero-title-color{
+    color: #F15525;
+    font-weight: 600px;
+}
+
+.hero-descr {
+    width: 366px;
+    font-size: 16px;
+    margin-bottom: 18px;
+    line-height: 23px;
+}
+
+.hero-divider {
+    width: 365px;
+    height: 1px;
+    background-color: #DEDEDE;
+    margin-bottom: 14px;
+    margin-top: 31px; 
+    margin-left: 0; /* Выравнивание по левому краю */
+}
+
+.hero-container {
+    background-image: url(../img/проба.png);
+    height: 534px;
+    margin-top: 0;
+    width: 1160px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: 106px;
+}
+
+.hero-btn{
+    width: 321px;
+    height: 70px;
+    border-radius: 82px;
+    background-color: #F15525;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 97px;
+}
+
+.hero-btn:hover {
+    background-color: #38BFF2;
+}
+
+.hero-content {
+    max-width: 51%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+    flex: 1;
+    max-width: 600px; /* Опционально, чтобы текст не растягивался */
+    margin-top: 65px;
+}
+
+.hero-image {
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    display: block;
+    width: 370px;
+    object-fit: cover;
+    display: flex;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+/*technologies*/
+
+.technologies_title {
+    font-size: 46px;
+    color: #22253B;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.technologies-container {
+    width: 1400px;
+}
+
+.technologies-img {
+    height: 352px;
+    margin-right: 59px;
+}
+
+.technologies-container-block {
+    width: 1160px;
+    height: 396px;
+    background-color: #EAF2F5;
+    border-radius: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 84px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*кнопки технолоджи*/
+.technologies-btn1 {
+    width: 311px;
+    height: 45px;
+    background-color: #5096FF;
+    border-radius: 44px; 
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-family: Gilroy, "GilroyLight";
+}
+
+.technologies-btn2 {
+    width: 89px;
+    height: 45px;
+    background-color: #FFB359;
+    border-radius: 44px; 
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.technologies-btn3 {
+    width: 151px;
+    height: 45px;
+    background-color: #FF6F50;
+    border-radius: 44px; 
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.technologies-btn4 {
+    width: 277px;
+    height: 45px;
+    background-color: #4BD071;
+    border-radius: 44px; 
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.technologies-btn5 {
+    width: 258px;
+    height: 45px;
+    background-color: #50C0FF;
+    border-radius: 44px; 
+    color: #fff;
+    font-size: 17px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.technologies-btn6 {
+    width: 95px;
+    height: 45px;
+    background-color: #4B77B9;
+    border-radius: 44px; 
+    color: #fff;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.technologies-btn7 {
+    width: 93px;
+    height: 45px;
+    background-color: #AF93FF;
+    border-radius: 44px; 
+    color: #fff;
+    font-size: 17px;
+    margin-right: 9px;
+}
+
+.technologies-buttons {
+    width: 490px;
+    height: 156px;
+    margin-bottom: 25px;
+}
+
+.technologies-descr {
+    font-size: 20px;
+    color: #22253B;
+    line-height: 25px;
+    width: 386px;
+}
+
+/* Добавляем эти стили к существующим */
+.technologies-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.technologies-right {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInRight 0.8s ease-out forwards;
+    animation-delay: 0.2s; /* Задержка для правого блока */
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Остальные ваши стили остаются без изменений */
+.technologies_title {
+    font-size: 46px;
+    color: #22253B;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/*education*/
+
+.education-container-block {
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.education-title {
+    color: #22253B;
+    font-size: 46px;
+    width: 598px;
+    margin-bottom: 34px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.education-descr-1 {
+    width: 230px;
+    line-height: 15px;
+    color: #22253B;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.education-title-mini-1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #22253B;
+    width: 166px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 19px;
+    line-height: 18.5px;
+}
+
+.education-descr-2 {
+    width: 230px;
+    line-height: 15px;
+    color: #22253B;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.education-title-mini-2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #22253B;
+    width: 166px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 19px;
+    line-height: 18.5px;
+}
+
+.education-descr-3 {
+    width: 180px;
+    line-height: 15px;
+    color: #22253B;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+}
+
+.education-title-mini-3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #22253B;
+    width: 166px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 19px;
+    line-height: 18.5px;
+}
+
+.education-descr-4 {
+    width: 128px;
+    line-height: 15px;
+    color: #22253B;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.education-title-mini-4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #22253B;
+    width: 166px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 19px;
+    line-height: 18.5px;
+}
+
+.education-descr-5 {
+    width: 182px;
+    line-height: 15px;
+    color: #22253B;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.education-title-mini-5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #22253B;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 19px;
+    line-height: 18.5px;
+}
+
+.education-descr-6 {
+    width: 250px;
+    line-height: 15px;
+    color: #22253B;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.education-title-mini-6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #22253B;
+    width: 166px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 19px;
+    line-height: 18.5px;
+}
+
+.education-descr-7 {
+    width: 190px;
+    line-height: 15px;
+    color: #22253B;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.education-title-mini-7 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #22253B;
+    width: 166px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 19px;
+    line-height: 18.5px;
+}
+
+/*анимация для education*/
+/* Добавляем анимацию fade-in */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Общие стили для всех карточек */
+  .education-item {
+    opacity: 0; /* Начальное состояние - прозрачность 0 */
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  /* Задержки для каждой карточки для последовательного появления */
+  .education-item:nth-child(1) { animation-delay: 0.1s; }
+  .education-item:nth-child(2) { animation-delay: 0.2s; }
+  .education-item:nth-child(3) { animation-delay: 0.3s; }
+  .education-item:nth-child(4) { animation-delay: 0.4s; }
+  .education-item:nth-child(5) { animation-delay: 0.5s; }
+  .education-item:nth-child(6) { animation-delay: 0.6s; }
+  .education-item:nth-child(7) { animation-delay: 0.7s; }
+  
+  /* Остальные ваши стили остаются без изменений */
+  .education-container-block {
+      width: 1160px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+  /* ... остальные существующие стили ... */
+
+
+
+
+.education-img4 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 43px;
+}
+
+.education-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.education-item {
+    width: 270px;
+    height: 254px;
+    background-color: #EAF2F5;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.education-container {
+    width: 1400px;
+    margin-bottom: 87px;
+}
+
+.education-items {
+    width: 1160px;
+    height: 536px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    justify-content: center;
+}
+
+/*program*/
+
+.image-container {
+    position: relative; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 762px;
+    height: 442px;
+    margin-bottom: 0;
+}  
+
+.program-image {
+    display: block; 
+    width: 762px;
+    height: 442px;
+    object-fit: cover;
+}
+
+.program-btn-center {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.btn-background-container {
+    width: 122px;
+    height: 122px;
+    background-image: url(../img/прозФон.svg); /* Укажите путь к вашей картинке */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.program-btn {
+    width: 80px;
+    height: 80px;
+    border: none;
+    background-color: #F15525;
+    border-radius: 82px;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease; /* Плавные переходы */
+}
+
+/* Анимация при наведении */
+.program-btn:hover {
+    animation: pulse 2s infinite; /* Плавная пульсация */
+    transform: scale(1.05); /* Небольшое увеличение */
+}
+
+/* Для плавного возврата после наведения */
+.program-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Добавляем анимацию пульсации */
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(241, 85, 37, 0.4);
+    }
+    70% {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 10px rgba(241, 85, 37, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(241, 85, 37, 0);
+    }
+  }
+
+
+.program-btn-image {
+    width: 14px;
+    height: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.program-btn-center-descr {
+    margin-top: 10px; 
+    color: #fff; 
+    font-size: 20px; 
+}
+
+
+
+
+.prog-container {
+    background-image: url(../img/гг.png);
+    background-repeat: no-repeat;
+    height: 1255px;
+    padding-top: 20px;
+}
+
+
+.program-container {
+    width: 1160px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 87px;
+    margin-top: 58px;
+}
+
+.program-title {
+    font-size: 46px;
+    color: #22253B;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+
+.program-descr {
+    font-size: 16px;
+    line-height: 20px;
+    width: 642px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+
+
+.block-type-program {
+    width: 1160px;
+    height: 349px;
+    background-color: #fff;
+    border-radius: 40px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 70px;
+}
+
+.block-type-program-block1 {
+    width: 264px;
+    height: 242px;
+    margin-bottom: 85px;
+    margin-left: 57px;
+    margin-right: 128px;
+}
+
+.block-type-program-block2 {
+    width: 264px;
+    height: 242px;
+    margin-bottom: 85px;
+    margin-right: 110px;
+}
+
+.block-type-program-block3 {
+    width: 264px;
+    height: 242px;
+    margin-bottom: 85px;
+    margin-right: 58px;
+} 
+
+.program-title-number {
+    font-size: 77px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #38BFF2;
+}
+
+.program-title-mini-1 {
+    width: 266px;
+    font-size: 24px;
+    color: #22253B;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 19px;
+}
+
+.program-descr-1 {
+    font-size: 16px;
+    line-height: 23px;
+    color: #22253B;
+    width: 232px;
+}
+
+.program-title-mini-2 {
+    width: 180px;
+    font-size: 24px;
+    color: #22253B;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 19px;
+}
+
+.program-descr-2 {
+    font-size: 16px;
+    line-height: 23px;
+    color: #22253B;
+    width: 266px;
+}
+
+.program-title-mini-3 {
+    width: 249px;
+    font-size: 24px;
+    color: #22253B;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 19px;
+}
+
+.program-descr-3 {
+    font-size: 16px;
+    line-height: 23px;
+    color: #22253B;
+    width: 282px;
+}
+
+.block-button {
+    width: 530px;
+    height: 93px;
+    background-color: #fff;
+    border-radius: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 26px;
+    margin-bottom: 90px;
+}
+
+.btn-start {
+    width: 249px;
+    height: 70px;
+    background-color: #F15525;
+    color: #fff;
+    border-radius: 82px;
+    margin-left: 14px;
+    margin-top: 12px;
+    margin-bottom: 11px;
+}
+
+.btn-start:hover {
+    background-color: #38BFF2;
+}
+
+.program-btn-descr {
+    width: 214px;
+    font-size: 15px;
+    color: #22253B;
+    line-height: 18px;
+    margin-left: 24px;
+}
+
+/*cards*/
+
+.cards-container {
+    width: 1400px;
+    height: auto; /* Изменено с фиксированной высоты */
+    background-color: #fff;
+    border-radius: 80px;
+    padding: 40px 0; /* Добавлены отступы сверху и снизу */
+    margin-bottom: 90px;
+}
+
+.cards-block {
+    width: 1160px;
+    height: auto; /* Изменено с фиксированной высоты */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Отступ между линиями */
+}
+
+.cards-line {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Отступ между карточками в линии */
+}
+
+/* Общие стили для всех карточек */
+.cards-img-people,
+.cards-help,
+.cards-methody,
+.cards-img-nout {
+    border-radius: 40px;
+    background-color: #EAF2F5;
+}
+
+/* Стили для конкретных карточек */
+.cards-img-people {
+    width: 401px;
+    height: 313px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-help {
+    width: 730px;
+    height: 313px;
+    padding: 0 20px; /* Добавлены отступы внутри карточки */
+}
+
+.cards-methody {
+    width: 730px;
+    height: 290px;
+    padding: 0 20px; /* Добавлены отступы внутри карточки */
+}
+
+.cards-img-nout {
+    width: 401px;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Остальные стили остаются без изменений */
+.cards-img-people-img {
+    margin: 41px 65px;
+}
+
+.cards-help-title-mini {
+    color: #22253B;
+    font-size: 32px;
+    line-height: 30px;
+    margin: 54px 0 18px 100px;
+}
+
+.cards-help-descr-1,
+.cards-help-descr-2 {
+    font-size: 16px;
+    color: #22253B;
+    line-height: 25px;
+    margin-left: 100px;
+}
+
+.cards-help-descr-1 {
+    width: 430px;
+    margin-bottom: 15px;
+}
+
+.cards-help-descr-2 {
+    width: 490px;
+    margin-bottom: 49px;
+}
+
+.cards-methody-title-mini {
+    color: #22253B;
+    font-size: 32px;
+    line-height: 30px;
+    margin: 54px 0 18px 100px;
+}
+
+.cards-methody-descr {
+    width: 450px;
+    color: #22253B;
+    line-height: 25px;
+    font-size: 16px;
+    margin: 0 128px 55px 100px;
+}
+
+.cards-img-nout-img {
+    margin: 15px 71px;
+}
+
+
+/*price*/
+
+.price-container {
+    width: 1400px;
+}
+
+.price-title {
+    font-size: 46px;
+    color: #22253B;
+    line-height: 46px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.price-block {
+    width: 1160px;
+    height: 65px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price-items-img {
+    margin-right: 30px;
+}
+
+.program-item-descr-1 {
+    width: 280px;
+    font-size: 16px;
+    color: #22253B;
+    line-height: 21px;
+    margin-right: 69px;
+}
+
+.program-item-descr-2 {
+    width: 192px;
+    font-size: 16px;
+    color: #22253B;
+    line-height: 21px;
+    margin-right: 69px;
+}
+
+.program-item-descr-3 {
+    width: 300px;
+    font-size: 16px;
+    color: #22253B;
+    line-height: 21px;
+    margin-right: 69px;
+}
+
+/*price-table*/
+
+.price-table {
+    width: 1160px;
+    height: 550px;
+    background-color: #fff;
+    padding: 20px; /* Добавляем отступы внутри контейнера */
+    box-sizing: border-box; /* Чтобы padding не увеличивал размер */
+    border-radius: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.price-table table {
+    width: 100%;
+    border-collapse: collapse; /* Убираем границы между ячейками */
+}
+
+.price-table thead th {
+    font-size: 16px;
+    color: #38BFF2;
+    text-align: left;
+    padding: 15px 0;
+    background-color: #fff; /* Фон шапки */
+    padding-top: 36px;
+}
+
+.price-table tbody td {
+    font-size: 20px;
+    text-align: left;
+    padding: 15px 0;
+}
+
+.price-table tbody tr.tr-block {
+    background-color: #F3F3F3;
+    border-radius: 10px;
+}
+
+.price-table tbody tr:last-child td {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Расположение колонок */
+.price-table th:nth-child(1),
+.price-table td:nth-child(1) {
+    width: auto; /* Первая колонка - автоматическая ширина */
+    padding-left: 19px;
+}
+
+.price-table th:nth-child(2),
+.price-table td:nth-child(2) {
+    width: 102px; /* Вторая колонка - фиксированная ширина */
+}
+
+.price-table th:nth-child(3),
+.price-table td:nth-child(3) {
+    text-align: right; /* Третья колонка - выравнивание по left краю */
+    width: auto;
+    padding-right: 40px;
+}
+
+/* Стили для скругленных углов у строк с фоном */
+.price-table tbody tr.tr-block td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.price-table tbody tr.tr-block td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* Для выравнивания заголовка третьего столбца строго по правому краю */
+.price-table th:nth-child(3) {
+    padding-right: 0;
+}
+
+/* Для ячеек третьего столбца */
+.price-table td:nth-child(3) {
+    padding-left: 10px;
+    padding-right: 220px; /* Такой же отступ, как у других ячеек */
+}
+
+.price-descr {
+    margin-left: 150px;
+    font-size: 16px;
+    color: #8E8E8E;
+    line-height: 25px;
+    margin-top: 25px;
+}
+
+.price-block-2 {
+    width: 1160px;
+    height: 218px;
+    background-color: #EAF2F5;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    display: flex;
+}
+
+.price-block-2-img-micro {
+    width: 91px;
+    height: 91px;
+    padding-left: 54px;
+}
+
+.price-block-2-descr {
+    width: 600px;
+    font-size: 17px;
+    line-height: 22px;
+    color: #22253B;
+    padding-left: 30px;
+    padding-right: 23px;
+}
+
+.price-btn-start {
+    width: 311px;
+    height: 70px;
+    background-color: #F15525;
+    border-radius: 82px;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 51px;
+}
+
+.price-btn-start:hover {
+    background-color: #38BFF2;
+}
+
+/*contacts*/
+
+.contacts-container {
+    width: 1160px;
+    height: 190px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 52px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contacts-left {
+    width: 265px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+.contacts-left img {
+    width: 87px;
+    margin-right: 18px;
+}
+
+.contacts-left-descr {
+    font-size: 16px;
+    line-height: 19px;
+    color: #8E8E8E;
+}
+
+.soz-seti {
+    width: 178px;
+    height: 35px;
+    display: flex;
+}
+
+.contacts-img-vk {
+    width: 35px;
+    margin-right: 16px;
+}
+
+.contacts-img-tg {
+    width: 35px;
+    margin-right: 16px;
+}
+
+.contacts-img-vtsp {
+    width: 35px;
+}
+
+
+
+.contacts-img-vk,
+.contacts-img-tg,
+.contacts-img-vtsp {
+    transition: opacity 0.3s ease;
+}
+
+.contacts-img-vk:hover {
+    content: url("../img/vkre.png"); /* Оранжевая версия */
+}
+
+.contacts-img-tg:hover {
+    content: url("../img/telegram\ \(1\).png");
+}
+
+.contacts-img-vtsp:hover {
+    content: url("../img/whatsapp.png");
+}
+
+
+
+.contacts-items {
+    margin-left: 350px; 
+}
+
+.contacts-items a {
+    text-decoration: none;
+    color: #22253B;
+}
+
+.contacts-items a:hover {
+    color: #F15525;
+}
+
+.contacts-item {
+    list-style: none;
+    margin-bottom: 25px;
+    width: 150px;
+    color: #22253B;
+    font-size: 13px;
+}
+
+.contacts-right {
+    width: 162pxpx;
+    height: 200px;
+    margin-left: 200px;
+}
+
+.contacts-numb-descr {
+    color: #38BFF2;
+    font-size: 16px;
+    padding-left: 0;
+}
+
+.contacts-pochta-descr {
+    color: #22253B;
+    font-size: 16px;
+    padding-left: 0;
+}
+
+.descr-cont {
+    color: #8E8E8E;
+    font-size: 13px;
+    line-height: 23px;
+    margin-top: 59px;
+    padding-left: 0;
+    width: 162px;
+}
+
+/*fotter*/
+
+.container-footer {
+    width: 1160px;
+    margin: 0 auto; /* Центрируем контейнер футера */
+}
+
+/* Стили для горизонтальной линии */
+.horizontal-line {
+    width: 1160px; /* Длина линии */
+    height: 1px; /* Толщина линии */
+    background-color: #d8d8d8; /* Серый цвет */
+    margin: 0 auto; /* Центрирование линии */
+    margin-top: 50px;
+}
+
+.footer-items {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.footer-item2 {
+    padding-left: 351px;
+}
+
+.footer-item3 {
+    padding-left: 64px;
+}
+
+.footer-items {
+    color: #8E8E8E;
+    font-size: 16px;
+}
+
+
+
+
+.header-burger {
+    display: none;
+    width: 27px;
+    height: 30px;
+    border: none;
+    background-color: #343434;
+    position: relative;
+    left: 2px;
+    z-index: 2;
+}
+
+.header-burger span {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    background-color: #F15525;
+    border-radius: 21px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+
+.header-burger span:nth-of-type(2) {
+    top: calc(50% - 5px) ;
+}
+
+.header-burger span:nth-of-type(3) {
+    top: calc(50% + 5px);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.header-burger.active span:first-of-type {
+    opacity: 0;
+
+}
+
+.header-burger.active span:nth-of-type(2) {
+    top: 50%;
+    transform:  translate(-50%, -50%) rotate(45deg);
+}
+
+.header-burger.active span:nth-of-type(3) {
+    top: 50%;
+    transform:  translate(-50%, -50%) rotate(-45deg);
+}
+
+
+@media (max-width: 360px) {
+
+
+    body {
+    min-width: 360px;
+    background-color: rgb(247, 247, 247);
+    font-family: Gilroy;
+    }
+    
+    .container {
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*header*/
+
+    .header-container{
+        margin-left: 40px;
+        margin-bottom: 0;
+    }
+
+    .hd-lst {
+        display: none;
+    }
+
+    .nav-bar {
+        position: fixed;
+        background-color: #fff;
+        top: 0;
+        left: -20rem;
+        height: max-content;
+        width:280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-out;
+        }
+
+        .toggle {
+        left: 0;
+        box-shadow: 1px 0 10px 2px rgba(0, 0, 0, 0.2);
+              
+        }
+        .toggle-menu {
+        background-color: #FFFFFF;
+        position: fixed;
+        top: 2rem;
+        left: 299px;
+        width: 17px;
+        height: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.5rem;
+        }
+        .line {
+        width: 100%;
+        height: 1.5px;
+        border-radius:21px;
+        background-color: #F15525;
+        transition: 0.2s ease-out;
+        }
+        .toggle .line1 {
+        background-color: #BCBCBC;
+        transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
+        }
+        .toggle .line2 {
+        display: none;
+               
+        }
+        .toggle .line3 {
+        background-color: #bcbcbc;
+        transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
+        }
+              
+        /* .toggle .toggle-menu {
+        background-color: lightseagreen;
+        }*/
+        .nav-list {
+        list-style: none;
+        }
+
+        .nav-list-item {
+        text-align: center;
+        padding: 1rem 0;
+        }
+        
+        .nav-link {
+        color:#22253B;
+        font-size: 20px;
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 0.4rem;
+        }
+
+        .nav-link::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #F15525;
+        transform: scaleX(0);
+        transition: 0.4s ease-in-out;
+        transform-origin: left;
+        }
+        .nav-link:hover::before {
+        transform: scaleX(1);
+        }
+
+    /*hero*/
+    .hero-container {
+        width: 360px;
+        display: block;
+        height: 500px;
+        margin-top: 0;
+        padding-top: 0;
+        background-image: url('../img/фон.png');
+        background-repeat: no-repeat;
+        margin-top: 0;
+    }
+
+    
+
+    .hero-title {
+        text-align: center;
+        width: 280px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+        padding: 0;
+        line-height: 24px;
+        margin-bottom: 18px;
+    }
+
+    .hero-descr {
+        text-align: center;
+        font-size: 12px;
+        line-height: 18px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 270px;
+    }
+    .hero-divider {
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        width: 299px;
+    }
+    .hero-btn {
+        width: 299px;
+        height: 70px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        font-size: 18px;
+        margin-top: 18px;
+        margin-bottom: 63px;
+    }
+
+    .hero-btn:hover {
+    background-color: #38BFF2;
+    }
+    .hero-image img {
+        width: 210px;
+        padding: 0;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+
+    /*technologies*/
+    .technologies-container {
+        width: 360px;
+        display: block;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .technologies_title {
+        font-size: 24px;
+        line-height: 26px;
+        width: 209px;
+        align-items: baseline;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .technologies-left {
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .technologies-container-block {
+        width: 300px;
+        height: 315px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .technologies-btn1 {
+        width: 267px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .technologies-btn2 {
+        width: 99px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .technologies-btn3 {
+        width: 160px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .technologies-btn4 {
+        width: 267px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .technologies-btn5 {
+        width: 267px;
+        height: 45px;
+        font-size: 14px;
+    } 
+    .technologies-btn6 {
+        width: 129px;
+        height: 45px;
+        font-size: 14px;
+    } 
+    .technologies-btn7 {
+        width: 125px;
+        height: 45px;
+        font-size: 14px;
+
+    } 
+    .technologies-right {
+        display: flex;
+        width: 267px;
+        height: 265px;
+    }
+
+    .technologies-descr {
+        display: none;
+    }
+
+    /*education*/
+
+    .education-container {
+        width: 360px;
+        height: 690px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .education-title {
+        font-size: 24px;
+        width: 283px;
+        line-height: 26px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .education-container-block {
+        width: 320px;
+        height: 621px;
+        display: flex;
+    }
+
+    /*education-item1*/
+    .education-item1 {
+        width: 145px;
+        height: 175px;
+    }
+
+    .education-img1  {
+        width: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 24px;
+    }
+    .education-title-mini-1 {
+        width: 103px;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 12px;
+        margin-top: 9px;
+    }
+
+    .education-descr-1 {
+        width: 126px;
+        line-height: 12px;
+        font-size: 9px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4px;
+    }
+
+    /*education-item2*/
+    .education-item2 {
+        width: 145px;
+        height: 175px;
+    }
+
+    .education-img2 {
+        width: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+    .education-title-mini-2 {
+        width: 126px;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 12px;
+        margin-top: 11px;
+    }
+
+    .education-descr-2 {
+        width: 108px;
+        line-height: 12px;
+        font-size: 9px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4px;
+    }
+
+    /*education-item3*/
+    .education-item3 {
+        width: 145px;
+        height: 155px;
+    }
+
+    .education-img3 {
+        width: 39px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 27px;
+    }
+    .education-title-mini-3 {
+        width: 128px;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 12px;
+        margin-top: 8px;
+    }
+
+    .education-descr-3 {
+        width: 124px;
+        line-height: 12px;
+        font-size: 9px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+    }
+
+    /*education-item4*/
+    .education-item4 {
+        width: 145px;
+        height: 155px;
+    }
+
+    .education-img4 {
+        width: 44px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 26px;
+    }
+    .education-title-mini-4 {
+        width: 111px;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 12px;
+        margin-top: 4px;
+    }
+
+    .education-descr-4 {
+        width: 110px;
+        line-height: 12px;
+        font-size: 9px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+    }
+
+    /*education-item5*/
+    .education-item5 {
+        width: 145px;
+        height: 175px;
+    }
+
+    .education-img5 {
+        width: 38px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+    .education-title-mini-5 {
+        width: 126px;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 12px;
+        margin-top: 8px;
+    }
+
+    .education-descr-5 {
+        width: 110px;
+        line-height: 12px;
+        font-size: 9px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+    }
+
+    /*education-item6*/
+    .education-item6 {
+        width: 145px;
+        height: 175px;
+    }
+
+    .education-img6 {
+        width: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+    .education-title-mini-6 {
+        width: 120px;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 12px;
+        margin-top: 11px;
+    }
+
+    .education-descr-6 {
+        width: 130px;
+        line-height: 12px;
+        font-size: 9px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4px;
+    }
+
+    /*education-item7*/
+    .education-item7 {
+        width: 300px;
+        height: 86px;
+        display: flex;
+        align-items: center;
+    }
+
+    .education-img7 {
+        width: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .education-title-mini-7 {
+        width: 150px;
+        font-size: 12px;
+        line-height: 12px;
+        margin-top: 0;
+        text-align: left;
+        margin-bottom: 5px;
+        padding-left: 0;
+    }
+
+    .education-descr-7 {
+        width: 150px;
+        line-height: 12px;
+        font-size: 9px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        padding: 0;
+        text-align: left;
+        padding-left: 2px;
+    }
+
+    .tecno {
+        display: block;
+        width: 154px;
+        height: 50px;
+        margin-top: 13px;
+        padding: 0;
+        margin-left: 17px;
+    }
+
+    /*program*/
+    .prog-container {
+        height: 1680px;
+    }
+    .program-container {
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .program-title {
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 213px;
+        line-height: 26px;
+        margin-top: 72px;
+    }
+
+    .program-descr {
+        width: 285px;
+        line-height: 17px;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .program-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image-container {
+    transform: scale(0.45);
+    transform-origin: top left; /* Это гарантирует, что масштабирование будет происходить от верхнего левого угла */
+    width: 200%; /* Увеличиваем ширину, чтобы компенсировать масштабирование */
+    height: 200%; /* Увеличиваем высоту, чтобы компенсировать масштабирование */
+    margin-right: auto; /* Убираем возможные отступы */
+    margin-left: auto;
+    padding: 0; /* Убираем возможные внутренние отступы */
+    margin-bottom: 0;
+    }
+
+    .program-image img {
+        width: 200px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*bbb*/
+    .block-type-program {
+    width: 300px;
+    height: 750px;
+    display: flex;
+    flex-direction: column; /* Элементы будут идти друг за другом вертикально */
+    margin-top: 0;
+    }
+
+    .block-type-program-block1 {
+    width: 225px;
+    height: 158px;
+    margin-left: 110px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    text-align: left; /* Текст выровнен по левому краю */
+    }
+
+    .block-type-program-block2 {
+    width: 225px;
+    height: 158px;
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    text-align: left; /* Текст выровнен по левому краю */
+    }
+
+    .block-type-program-block3 {
+    width: 225px;
+    height: 158px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    text-align: left; /* Текст выровнен по левому краю */
+     }
+
+    .program-title-number {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    }
+
+    .program-title-mini-1,
+    .program-title-mini-2,
+    .program-title-mini-3 {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    }
+
+    .program-descr-1,
+    .program-descr-2,
+    .program-descr-3 {
+    font-size: 12px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    line-height: 14px;
+    width: 230px;
+    }
+
+    .vertical-line {
+    display: none; /* Скрываем вертикальные линии, так как теперь блоки идут друг за другом */
+    }
+
+    .block-button {
+        width: 300px;
+        height: 151px;
+        display: block;
+        border-radius: 30px;
+    }
+
+    .btn-start {
+        width: 249px;
+        height: 70px;
+        font-size: 16px;
+        margin-left: 25px;
+        margin-bottom: 0;
+    }
+
+    .program-btn-descr {
+        font-size: 12px;
+        width: 249px;
+        line-height: 18px;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    .cards-container {
+        width: 360px;
+        height: 1060px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+
+    .cards-img-people {
+        width: 300px;
+        height: 243px;
+        border-radius: 30px;
+        margin-bottom: 12px;
+        margin-left: 28px;
+    }
+
+    .cards-img-people-img{
+        width: 205px;
+        height: auto;
+    }
+
+    .cards-help {
+        width: 265px;
+        height: 285px;
+        border-radius: 30px;
+        margin-left: 28px;
+        margin-bottom: 0;
+    }
+
+    .cards-help-title-mini {
+        font-size: 20px;
+        line-height: 19px;
+        width: 155px;
+        margin-top: 12px;
+        text-align: left;
+        margin-left: 15px;
+        padding-top: 38px;
+    }
+
+    .cards-help-descr-1 {
+        width: 220px;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .cards-help-descr-2 {
+        width: 257px;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .cards-methody {
+        width: 265px;
+        height: 232px;
+        border-radius: 30px;
+        margin-left: 28px;
+    }
+
+    .cards-methody-title-mini {
+        font-size: 20px;
+        text-align: left;
+        margin-left: 25px;
+        padding-top: 30px;
+    }
+
+    .cards-methody-descr {
+       font-size: 12px;
+       width: 245px;
+       line-height: 17px;
+       text-align: left;
+       margin-left: 25px;
+    }
+
+    .cards-img-nout {
+        width: 300px;
+        height: 243px;
+        margin-top: 12px;
+        margin-left: 28px;
+    }
+
+    .cards-img-nout-img {
+        width: 206px;
+        height: auto;
+    }
+
+    .cards-line {
+        display: block;
+        width: 300px;
+        height: 478px;
+    }
+
+    /*price*/
+    .price-container {
+        width: 320px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .price-title {
+       font-size: 22px;
+       margin-left: auto;
+       margin-right: auto; 
+       align-items: center;
+    }
+
+    .price-block {
+        width: 240px;
+        height: 405px;
+    }
+
+
+    .price-items {
+        display: block;
+    }
+
+    .program-item {
+        display: block;
+        text-align: center;
+    }
+
+    .price-items-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .program-item-descr-1 {
+        width: 246px;
+        line-height: 17px;
+        font-size: 12px;
+        margin-bottom: 21px;
+    }
+
+    .program-item-descr-2 {
+        width: 168px;
+        line-height: 17px;
+        font-size: 12px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 21px;
+    }
+    
+    .program-item-descr-3 {
+        width: 246px;
+        line-height: 17px;
+        font-size: 12px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 21px;
+    } 
+
+    .img-price {
+        width: 47px;
+        height: 30px;
+        text-align: left;
+        background-image: url(../img/листать.svg);
+    }
+
+    .price-table {
+    width: 1160px;
+    height: 570px;
+    }
+
+    .price-descr {
+        font-size: 12px;
+        text-align: left;
+        line-height: 20px;
+        width: 196px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 47px;
+    }
+
+    .price-block-2 {
+        width: 300px;
+        height: 415px;
+        border-radius: 30px;
+        display: block;
+    }
+
+    .price-block-2-img-micro {
+        width: 75px;
+        margin-left: 55px;
+        margin-top: 38px;
+    }
+
+    .price-block-2-descr {
+        width: 251px;
+        font-size: 12px;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+
+    .price-btn-start {
+        width: 257px;
+        height: 60px;
+        font-size: 15px;
+        margin-left: 20px; 
+    }
+
+    .contacts-container {
+        width: 360px;
+        height: 520px;
+        display: block;
+    }
+
+    .contacts-left {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .soz-seti {
+        width: 175px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 17px;
+        margin-bottom: 37px;
+    }
+
+    .contacts-items {
+        width: 133px;
+        height: 185px;
+        display: block;
+        margin-left: 48px;
+        text-align: center;
+    }
+
+    .contacts-right {
+        display: block;
+        margin-left: 100px;
+        margin-top: 42px;
+    }
+
+    .contacts-numb-pochta {
+        width: 132px;
+        height: 48px;
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .descr-cont {
+        width: 175px;
+        height: 48px;
+        padding-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .container-footer {
+        width: 320px;
+    }
+
+    .horizontal-line {
+        width: 300px;
+        margin-left: 25px;
+    }
+
+    .footer-item1 {
+        font-size: 12px;
+        width: 270px;
+        text-align: center;
+        padding-left: 25px;
+        padding-bottom: 13px;
+    }
+
+    .footer-item2 {
+        font-size: 12px;
+        width: 270px;
+        text-align: center;
+        padding-left: 25px;
+        padding-bottom: 13px;
+    }
+
+    .footer-item3 {
+        font-size: 12px;
+        width: 270px;
+        text-align: center;
+        padding-left: 25px;
+        padding-bottom: 13px;
+    }
+
+    .footer-items {
+        display: block;
+        width: 270px;
+        height: 95px;
+        text-align: center;
+    }
+}
+
+
+/*<div class="container head-cont flex">
+            <div class="header-container flex">
+            <a  href="#" class="header-logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <div class="menu">
+            <nav class="header-nav-center">
+                <div class="toogle-menu">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+                <ul class="list-reset header-list list-reset flex">
+                    <li class="list-reset header-list-item hd-lst flex">
+                        <a href="#technologies" class="header-link">
+                            Чему вы&nbsp;научитесь
+                        </a>
+                    </li>
+                    <li class="list-reset header-list-item hd-lst flex">
+                        <a href="#education" class="header-link">
+                            Процесс обучения
+                        </a>
+                    </li>
+                    <li class="list-reset header-list-item hd-lst flex">
+                        <a href="#price" class="header-link">
+                            Стоимость
+                        </a>
+                    </li>
+                    <li class="list-reset header-list-item hd-lst header-list-contacts flex">
+                        <a href="#contacts" class="header-link">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="list-reset header-list-item hd-lst header-list-item-r flex">
+                        <a href="" class="header-link">
+                            Регистрация
+                        </a>
+                    </li>
+                    <li class="list-reset header-list-item  flex">
+                        <button class="btn-reset btn header-btn"><img src="img/strr.svg" alt=""> Войти</button>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+           </div>
+        </div>
+        */
